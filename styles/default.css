@@ -1,0 +1,82 @@
+html {
+	height: 100%;
+	color: rgb(68, 67, 66);
+	background-color: hsl(0, 100%, 97%);
+	font-size: 100%;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+	line-height: 1.6;
+	margin: 0 auto;
+	padding: 0;
+    width: 90%;
+	color: rgb(68, 67, 66);
+	background-color: hsl(0, 100%, 97%);
+	font-size: 100%;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Header Layout */
+h1, h2 {
+	padding: 10px;
+	color: rgb(5, 93, 9);
+	background-color: hsl(0, 100%, 97%);
+	text-align: center;
+}
+
+/* Navigation Bar Layout */
+nav ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+    justify-content: center;
+	list-style: none;
+	list-style-image: none;
+}
+
+nav ul li {
+	margin-right: 30px;
+}
+
+
+/* Navigation Links */
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+/* Pseudo-Class for Hypertext Links */
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Footer Navigation Bar Layout */
+nav a {
+	padding: 25px;
+	color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Pseudo-Class for Hypertext Links */
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Main Content Layout */
+article {
+    margin: 20px 0;
+    padding: 15px; 
+    background-color: #fff;
+}
+
+/* Footer Layout */
+footer {
+    text-align: center; 
+    padding: 5px; 
+	color: white;
+    text-align: center; 
+    background-color: rgb(5, 93, 9);
+}
