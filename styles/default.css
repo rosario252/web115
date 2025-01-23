@@ -72,6 +72,11 @@ main {
     background-color: #fff;
 }
 
+/* Center the image and caption */
+.image-container {
+	text-align: center;
+}
+
 /* Footer Layout */
 footer {
     text-align: center; 
