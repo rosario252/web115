@@ -41,7 +41,6 @@ header img {
 
 main {
 	line-height: 1.5;
-	padding: 5px;
 	margin: 25px auto;
     width: 90%;
 	background-color: #F5F5F5;
@@ -91,9 +90,7 @@ blockquote {
 	font-size: 1.5rem;
 	font-style: italic;
 	border-left: 5px solid #FD0D71;
-	padding: 15px 20px;
 	margin: 20px;
-	width: 80%;
 	box-shadow: 4px 4px 15px #FD0D71;
 	
 }
