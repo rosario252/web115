@@ -1,0 +1,108 @@
+/* General styles */
+html, body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #FFB347;
+    color: #4A4A4A;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar Layout */
+nav ul {
+	display: flex;
+    justify-content: center;
+	list-style: none;
+}
+
+nav ul li {
+	margin-right: 30px;
+}
+
+/* Navigation Links */
+nav ul li a {
+    color: #4A4A4A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Pseudo-Class for Hypertext Links */
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+	color: #FD0D71;
+}
+
+/* Responsive Logo Image */
+header img {
+    max-width: 100%;
+    height: auto; 
+    display: block; 
+    margin: 0 auto;
+}
+
+main {
+	line-height: 1.5;
+	padding: 5px;
+	margin: 25px auto;
+    width: 90%;
+	background-color: #F5F5F5;
+	font-size: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: start;
+}
+
+figure img {
+	max-width: 100%;
+	height: auto;
+	border: 1px solid #4A4A4A;
+}
+
+figure img:hover {
+	transform: scale(1.05);
+}
+
+h1 {
+	font-family: 'Lexend Tera', sans-serif;
+	font-size: 25px;
+	letter-spacing: 15px;
+	text-transform: uppercase;
+	color: #F5F5F5;
+	background-color: #6A0572;
+	text-align: center;
+	margin: 20px;
+	padding: 10px;
+}
+
+h2 {
+	font-family: 'Lexend Tera', sans-serif;
+	font-size: 15px;
+	color: #F5F5F5;
+	background-color: #FD0D71;
+	text-align: center;
+	margin: 20px;
+	padding: 10px;
+}
+
+p {
+	margin: 20px;
+}
+
+blockquote {
+	font-size: 1.5rem;
+	font-style: italic;
+	border-left: 5px solid #FD0D71;
+	padding: 15px 20px;
+	margin: 20px;
+	width: 80%;
+	box-shadow: 4px 4px 15px #FD0D71;
+	
+}
+
+/* Footer Layout */
+footer {
+    text-align: center; 
+    padding: 5px; 
+	color: #F5F5F5;
+    text-align: center; 
+    background-color: #FD0D71
+}
