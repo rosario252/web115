@@ -95,6 +95,19 @@ blockquote {
 	
 }
 
+/* Footer Navigation Bar Layout */
+nav a {
+	padding: 25px;
+	color: #F5F5F5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Pseudo-Class for Hypertext Links */
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
 /* Footer Layout */
 footer {
     text-align: center; 
