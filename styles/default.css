@@ -50,6 +50,7 @@ nav ul li a {
 /* Pseudo-Class for Hypertext Links */
 nav ul li a:hover {
     text-decoration: underline; /* Underline on hover */
+	color: white;
 }
 
 /* Footer Navigation Bar Layout */
