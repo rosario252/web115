@@ -50,7 +50,7 @@ nav ul li a {
 /* Pseudo-Class for Hypertext Links */
 nav ul li a:hover {
     text-decoration: underline; /* Underline on hover */
-	color: white;
+	color: rgb(5, 93, 9);
 }
 
 /* Footer Navigation Bar Layout */
@@ -64,6 +64,7 @@ nav a {
 /* Pseudo-Class for Hypertext Links */
 nav a:hover {
     text-decoration: underline; /* Underline on hover */
+	color: hsl(0, 100%, 97%);
 }
 
 /* Main Content Layout */
