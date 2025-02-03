@@ -66,17 +66,17 @@ x = 1;
 y = 5;
 
 // execute if condition is true
-if(x == 1) {
+if (x == 1) {
 	console.log("32. x is equal to 1");
 }
 
 // execute if condition is not true
-if( y != 1) {
+if ( y != 1) {
 	console.log("33. y is not equal to 1");
 }
 
 // specify a block of code to be executed, if same consition is false
-if(x > 5) {
+if (x > 5) {
 	console.log("x is greateer than 5");
 }
 else
@@ -85,10 +85,10 @@ else
 }
 
 // specify a new condition to test, if the first condition is false
-if(x > 1) {
+if (x > 1) {
 	console.log("x is greateer than 1");
 }
-else if(x < 1)
+else if (x < 1)
 {
 	console.log("x is less than 1");
 }
@@ -102,7 +102,7 @@ else
 let a = 1;
 let b = "1";
 
-if(a == b)
+if (a == b)
 {
 	console.log("36. a is equal in magnitude to b regardless of the data type");
 }
@@ -111,7 +111,7 @@ else
 	console.log("a is not equal to b");
 }
 
-if(a === b)
+if (a === b)
 {
 	console.log("a is equal in magnitude to b including data type");
 }
@@ -142,29 +142,24 @@ console.log("44. Using '.join()' on an array of letters: " + letters.join(""));
 console.log("45. Using '.join()' on an array of letters: " + letters.join(", "));
 
 // LOOPS
-for (var i = 0; i < 3; i++)
-{
-	iteration = [i];
+for (var i = 0; i < 3; i++) {
 	console.log("46. Iteration: " + [i]);
 }
 
 let students = ["Jim", "James", "Paul", "Tryone"];
-for (var i = 0; i < students.length; i++)
-{
+for (var i = 0; i < students.length; i++) {
 	console.log("47. " + students[i]);
 }
 
 // FUNCTIONS
 // simple function that adds two numbers together
-function addition(a, b)
-{
+function addition(a, b) {
 	return a + b;
 }
 console.log("48. addition() function demo: " + addition(15,20));
 
 // simple log statement
-function printHello()
-{
+function printHello() {
 	console.log("Function was called");
 }
 // output
@@ -172,10 +167,8 @@ console.log("49. Demo of a function call: ");
 printHello();
 
 // this function accepts a parameter and iterated through an array
-function listLoop(userList)
-{
-	for(var i = 0; i < userList.length; i++)
-	{
+function listLoop(userList) {
+	for(var i = 0; i < userList.length; i++) {
 		console.log(userList[i]);
 	}
 }
