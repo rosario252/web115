@@ -79,8 +79,7 @@ if ( y != 1) {
 if (x > 5) {
 	console.log("x is greateer than 5");
 }
-else
-{
+else {
 	console.log("34. x is less than or equal to 5");
 }
 
@@ -88,12 +87,10 @@ else
 if (x > 1) {
 	console.log("x is greateer than 1");
 }
-else if (x < 1)
-{
+else if (x < 1) {
 	console.log("x is less than 1");
 }
-else
-{
+else {
 	console.log("35. x is equal to 1.");
 }
 
@@ -102,21 +99,17 @@ else
 let a = 1;
 let b = "1";
 
-if (a == b)
-{
+if (a == b) {
 	console.log("36. a is equal in magnitude to b regardless of the data type");
 }
-else
-{
+else {
 	console.log("a is not equal to b");
 }
 
-if (a === b)
-{
+if (a === b) {
 	console.log("a is equal in magnitude to b including data type");
 }
-else
-{
+else {
 	console.log("37. a is not equal to b");
 }
 
@@ -168,7 +161,7 @@ printHello();
 
 // this function accepts a parameter and iterated through an array
 function listLoop(userList) {
-	for(var i = 0; i < userList.length; i++) {
+	for (var i = 0; i < userList.length; i++) {
 		console.log(userList[i]);
 	}
 }
