@@ -40,13 +40,47 @@ header img {
 }
 
 main {
+	display: block;
 	line-height: 1.5;
-	margin: 25px auto;
+	margin: 25px 25px;
 	background-color: #F5F5F5;
 	font-size: 100%;
-	display: block;
 	padding: 1px;
 }
+
+/* Specific styling for Brand page's main container */
+.flex-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+	line-height: 1.5;
+	margin: 25px 25px;
+	background-color: #F5F5F5;
+	font-size: 100%;
+	padding: 1px;
+}
+
+/* Style for the image container */
+.image-right {
+    flex: 0 0 auto;
+    max-width: 30%;
+}
+
+/* Style for the image itself */
+.image-right img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+/* Hover effect for the image */
+.image-right img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Intensify shadow on hover */
+}
+
 
 /* Center the image and caption */
 .image-container {
