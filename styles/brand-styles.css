@@ -45,19 +45,33 @@ main {
     width: 90%;
 	background-color: #F5F5F5;
 	font-size: 100%;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	align-items: start;
+	display: block;
+	padding: 1px;
 }
 
-figure img {
-	max-width: 100%;
-	height: auto;
-	border: 1px solid #4A4A4A;
+/* Center the image and caption */
+.image-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    box-sizing: border-box; 
+    text-align: center; 
 }
 
-figure img:hover {
-	transform: scale(1.05);
+.image-container img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.image-container figcaption {
+    margin-top: 10px;
+    font-size: 1rem; 
+    color: #555; 
 }
 
 h1 {
@@ -74,7 +88,7 @@ h1 {
 
 h2 {
 	font-family: 'Lexend Tera', sans-serif;
-	font-size: 15px;
+	font-size: 20px;
 	color: #F5F5F5;
 	background-color: #FD0D71;
 	text-align: center;
@@ -106,6 +120,7 @@ nav a {
 /* Pseudo-Class for Hypertext Links */
 nav a:hover {
     text-decoration: underline; /* Underline on hover */
+    color: #6A0572; 
 }
 
 /* Footer Layout */
