@@ -12,6 +12,7 @@ nav ul {
 	display: flex;
     justify-content: center;
 	list-style: none;
+	flex-wrap: wrap;
 }
 
 nav ul li {
@@ -129,6 +130,15 @@ h2 {
 	padding: 10px;
 }
 
+h3 {
+	font-family: 'Lexend Tera', sans-serif;
+	font-size: 20px;
+	color: #4A4A4A;
+	text-align: center;
+	margin: 20px;
+	padding: 10px;
+}
+
 p {
 	margin: 20px;
 }
@@ -140,6 +150,46 @@ blockquote {
 	margin: 20px;
 	box-shadow: 4px 4px 15px #FD0D71;
 	
+}
+
+/* Form Container */
+#name-form {
+    width: 100%;
+    max-width: 400px;
+    background-color: #f5f5f5;
+    margin: 20px auto;
+}
+
+#name-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#name-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+	box-sizing: border-box;
+    font-size: 16px;
+}
+
+#name-form button {
+    display: block;
+    width: 100%;
+    background-color: #FD0D71;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#name-form button:hover {
+    background-color: #6A0572;
 }
 
 /* Footer Navigation Bar Layout */

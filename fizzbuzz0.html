@@ -12,18 +12,51 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 	
-    <title>Mommii Rozay's Fizz Buzz 0 </title>
+    <title>Rosario Sanchez's Radiant Swan &#9788; WEB115 &#9788; FIZZ BUZZ 0</title>
+	<link rel="icon" type="image/png" href="images/favicon.png">
 	<script src="https://lint.page/kit/67ff88.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="scripts/fizzbuzzform.js"></script>
 </head>
 
 <body>
     <header>
-        <h1>Mommii Rozay's Fizz Buzz 0</h1>
+		<a href="brand.html">
+			<img src="images/logobanner.png" alt="Mommii Rozay Logo">
+		</a>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="introduction.html">Introduction</a></li>
+				<li><a href="contract.html">Contract</a></li>
+				<li><a href="brand.html">Brand</a></li>
+				<li><a href="survey.html">Survey</a></li>
+				<li><a href="fizzbuzz0.html">Fizz Buzz 0</a></li>
+			</ul>
+		</nav>
     </header>
 
     <main>
-        <p>Welcome to the starting point of Fizz Buzz exploration! This page serves as a foundation for implementing the Fizz Buzz logic in an engaging way while maintaining alignment with Mommii Rozay's brand.</p>
-        <p>Check back here for updates and additional functionality!</p>
+		<h1>Rosario Sanchez's Radiant Swan</h1>
+		<h2>Fizz Buzz 0</h2>
+		<h3 id="greeting">Welcome to Mommii Rozay's Page</h3>
+
+		<!-- Form for User Input -->
+        <form id="name-form">
+            <!-- First Name Field -->
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" placeholder="Enter your First Name" required>
+
+            <!-- Middle Initial Field -->
+            <label for="middle_initial">Middle Initial:</label>
+            <input type="text" id="middle_initial" name="middle_initial" placeholder="Enter your Middle Initial" maxlength="1">
+
+            <!-- Last Name Field -->
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" placeholder="Enter your Last Name" required>
+
+            <!-- Submit Button -->
+            <button id="submit-button" type="button" onclick="greetUser()">Submit</button>
+        </form>
     </main>
 
     <footer>
