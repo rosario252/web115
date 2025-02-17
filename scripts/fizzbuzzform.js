@@ -1,7 +1,9 @@
 // Wait for the page to fully load before running the script
 document.addEventListener("DOMContentLoaded", function () {
+	
     // Prevent form submission & handle everything inside the event listener
     document.getElementById("name-form").addEventListener("submit", function (event) {
+		
         event.preventDefault(); // Prevents the form from refreshing the page
 
         // Get user input values
@@ -11,7 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Create the full name string
         let fullName = firstName;
-        if (middleInitial) {
+        if (middleInitial) 
+		{
             fullName += ` ${middleInitial}.`;
         }
         fullName += ` ${lastName}`;
@@ -25,16 +28,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Check if a results container already exists, if not, create one
         let resultsContainer = document.getElementById("results-container");
-        if (!resultsContainer) {
+        if (!resultsContainer) 
+		{
             resultsContainer = document.createElement("div");
             resultsContainer.id = "results-container";
             document.getElementById("greeting").parentElement.appendChild(resultsContainer);
-        } else {
+        } 
+		else 
+		{
             resultsContainer.innerHTML = ""; // Clear old results before adding new ones
         }
 
         // Loop from 1 to the chosen number and create paragraph elements
-        for (let i = 1; i <= countTo; i++) {
+        for (let i = 1; i <= countTo; i++) 
+		{
             const isEven = (i % 2 === 0) ? "even" : "odd";
             const paragraph = document.createElement("p");
             paragraph.textContent = `${i}. Bazoom Bazang - The number is ${isEven}`;
