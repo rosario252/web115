@@ -1,39 +1,44 @@
-function greetUser() {
-    // Get user input values
-    const firstName = document.getElementById("first_name").value;
-    const middleInitial = document.getElementById("middle_initial").value;
-    const lastName = document.getElementById("last_name").value;
+// Wait for the page to fully load before running the script
+document.addEventListener("DOMContentLoaded", function () {
+    // Prevent form submission & handle everything inside the event listener
+    document.getElementById("name-form").addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevents the form from refreshing the page
 
-    // Construct the full name
-    let fullName = firstName;
-    if (middleInitial) {
-        fullName += ` ${middleInitial}.`;
-    }
-    fullName += ` ${lastName}`;
+        // Get user input values
+        const firstName = document.getElementById("first-name").value;
+        const middleInitial = document.getElementById("middle-initial").value;
+        const lastName = document.getElementById("last-name").value;
 
-    // Display greeting
-    const greetingElement = document.getElementById("greeting");
-    greetingElement.textContent = `Welcome to Mommii Rozay's Brand, ${fullName}!`;
-	
-    // Prompt the user for a number
-    let countTo = prompt(`How high do you want to count, ${firstName}?`);
-    countTo = parseInt(countTo);
-    
-    // Validate user input
-    if (isNaN(countTo) || countTo <= 0) {
-        alert("Please enter a valid positive number.");
-        return;
-    }
+        // Create the full name string
+        let fullName = firstName;
+        if (middleInitial) {
+            fullName += ` ${middleInitial}.`;
+        }
+        fullName += ` ${lastName}`;
 
-    // Generate themed output with a loop using an unordered list
-    const loopContainer = document.createElement("ul");
-    for (let i = 1; i <= countTo; i++) {
-        const isEven = i % 2 === 0 ? "even" : "odd";
-        const listItem = document.createElement("p");
-        listItem.textContent = `${i}. Bazoom Bazang - The number is ${isEven}`;
-        loopContainer.appendChild(listItem);
-    }
+        // Display greeting message on the page
+        document.getElementById("greeting").textContent = `Welcome to Mommii Rozay's Brand, ${fullName}!`;
 
-    // Append the loop container below the greeting
-    greetingElement.parentElement.appendChild(loopContainer);
-}
+        // Ask user for a number
+        let countTo = prompt(`How high do you want to count, ${firstName}?`);
+        countTo = parseInt(countTo, 10);
+
+        // Check if a results container already exists, if not, create one
+        let resultsContainer = document.getElementById("results-container");
+        if (!resultsContainer) {
+            resultsContainer = document.createElement("div");
+            resultsContainer.id = "results-container";
+            document.getElementById("greeting").parentElement.appendChild(resultsContainer);
+        } else {
+            resultsContainer.innerHTML = ""; // Clear old results before adding new ones
+        }
+
+        // Loop from 1 to the chosen number and create paragraph elements
+        for (let i = 1; i <= countTo; i++) {
+            const isEven = (i % 2 === 0) ? "even" : "odd";
+            const paragraph = document.createElement("p");
+            paragraph.textContent = `${i}. Bazoom Bazang - The number is ${isEven}`;
+            resultsContainer.appendChild(paragraph);
+        }
+    });
+});
