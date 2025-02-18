@@ -20,8 +20,17 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("greeting").textContent = `Welcome to Mommii Rozay's Brand, ${fullName}!`;
 
         // Ask user for a number
-        let countTo = prompt(`How high do you want to count, ${firstName}?`);
+        let countTo = prompt(`How high do you want to count, ${firstName}? (Max: 125)`);
         countTo = parseInt(countTo, 10);
+
+        // Validate input: Ensure it's a number and within the limit
+        if (isNaN(countTo) || countTo <= 0) {
+            alert("Please enter a valid number greater than 0.");
+            return;
+        } else if (countTo > 125) {
+            alert("The maximum count is 125. Setting to 125.");
+            countTo = 125; // Restrict to the maximum allowed number
+        }
 
         // Check if a results container already exists, if not, create one
         let resultsContainer = document.getElementById("results-container");
