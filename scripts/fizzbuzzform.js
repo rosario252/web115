@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
         for (let i = 1; i <= countTo; i++) {
             const isEven = (i % 2 === 0) ? "even" : "odd";
             const paragraph = document.createElement("p");
-            paragraph.textContent = `${i}. Bazoom Bazang - The number is ${isEven}`;
+            paragraph.textContent = `${i}. Unique Voice - The number is ${isEven}`;
             resultsContainer.appendChild(paragraph);
         }
     });
