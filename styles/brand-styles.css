@@ -211,6 +211,31 @@ p {
     text-align: center;
 }
 
+/* Center the image and caption */
+.image-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;     
+    box-sizing: border-box; 
+	
+    text-align: center; 
+}
+
+.image-container img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.image-container figcaption {
+    margin-top: 10px;
+    font-size: 1rem; 
+    color: #555; 
+}
+
 blockquote {
 	font-size: 1.5rem;
 	font-style: italic;
