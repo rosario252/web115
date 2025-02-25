@@ -62,66 +62,8 @@ main {
 	padding: 1px;
 }
 
-/* Specific styling for Brand page's main container */
-.flex-main {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-	line-height: 1.5;
-	margin: 25px 25px;
-	background-color: #F5F5F5;
-	font-size: 100%;
-	padding: 1px;
-}
-
-/* Style for the image container */
-.image-right {
-    flex: 0 0 auto;
-    max-width: 30%;
-}
-
-/* Style for the image itself */
-.image-right img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
-}
-
-/* Hover effect for the image */
-.image-right img:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Intensify shadow on hover */
-}
-
-
-/* Center the image and caption */
-.image-container {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    width: 97%; 
-    box-sizing: border-box; 
-    text-align: center; 
-}
-
-.image-container img {
-    max-width: 100%; 
-    height: auto; 
-    display: block; 
-    margin: 0 auto; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-}
-
-.image-container figcaption {
-    margin-top: 10px;
-    font-size: 1rem; 
-    color: #555; 
-}
-
-div {
+/* Div containers inside main */
+main div {
 	display: block;
 	line-height: 1.5;
 	margin: 25px 150px 25px 150px;
@@ -129,6 +71,59 @@ div {
 	font-size: 100%;
 	padding: 1px;
 	border-radius: 8px;
+}
+
+/* Flexbox within the Article */
+.flex-article {
+    display: flex;
+	margin: 25px 150px 25px 150px;;
+    background-color: #F5F5F5;
+    border-radius: 8px;
+}
+
+/* Article Content */
+.article-content {
+	margin: 0;
+    padding-right: 0 /* Space between text and image */
+}
+
+/* Image Positioned on the Right */
+.image-right {
+    flex: 0 0 30%; /* Fixed width for the image container */
+    text-align: center;
+    margin-left: 30px;
+
+}
+
+/* Style for the image itself */
+.image-right img {
+    display: block;
+    max-width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for the image */
+.image-right img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.list {
+	font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .flex-article {
+        flex-direction: column;
+    }
+
+    .image-right {
+        max-width: 100%;
+        margin: 20px auto 0;
+    }
 }
 
 h1 {
