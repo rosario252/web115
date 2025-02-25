@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         fullName += ` ${lastName}`;
 
         // Display greeting message on the page
-        document.getElementById("greeting").textContent = `Welcome to Mommii Rozay's Brand, ${fullName}!`;
+        document.getElementById("greeting").textContent = `Welcome to Mommii Rozay, ${fullName}!`;
 
         // Ask user for a number
         let countTo = prompt(`How high do you want to count, ${firstName}? (Max: 125)`);
