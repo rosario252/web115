@@ -149,8 +149,8 @@ h2 {
 	background-color: #FD0D71;
 	text-align: center;
 	margin: 20px;
-	padding: 5px;
-	BORDER-RADIUS: 8px;
+	padding: 0;
+	border-radius: 8px;
 }
 
 h3 {
