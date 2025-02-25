@@ -221,7 +221,7 @@ p {
 }
 
 .image-container img {
-    max-width: 680px; 
+    width: 680px; 
     height: auto; 
     display: block; 
     margin: 0 auto; 
