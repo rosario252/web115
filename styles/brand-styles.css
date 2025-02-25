@@ -123,7 +123,7 @@ h1 {
 h2 {
 	font-family: 'Lexend Tera', sans-serif;
 	font-size: 25px;
-	letter-spacing: -2px;
+	letter-spacing: -3px;
 	color: #F5F5F5;
 	background-color: #FD0D71;
 	text-align: center;
@@ -134,7 +134,7 @@ h2 {
 h3 {
 	font-family: 'Lexend Tera', sans-serif;
 	font-size: 20px;
-	letter-spacing: -3px;
+	letter-spacing: -2px;
 	color: #4A4A4A;
 	text-align: center;
 	margin: 20px;
@@ -148,7 +148,9 @@ p {
 blockquote {
 	font-size: 1.5rem;
 	font-style: italic;
+	border-left: 5px solid #FD0D71;
 	margin: 20px;
+	box-shadow: 4px 4px 15px #FD0D71;
 	
 }
 
