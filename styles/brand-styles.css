@@ -145,10 +145,12 @@ h2 {
 	font-family: 'Lexend Tera', sans-serif;
 	font-size: 30px;
 	letter-spacing: -3px;
-	color: #FD0D71;
+	color: #F5F5F5;
+	background-color: #FD0D71;
 	text-align: center;
-	margin: 5px;
+	margin: 20px;
 	padding: 5px;
+	BORDER-RADIUS: 8px;
 }
 
 h3 {
