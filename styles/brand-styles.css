@@ -124,7 +124,7 @@ main {
 div {
 	display: block;
 	line-height: 1.5;
-	margin: 25px;
+	margin: 25px 150px 25px 150px;
 	background-color: #F5F5F5;
 	font-size: 100%;
 	padding: 1px;
