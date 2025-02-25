@@ -1,6 +1,7 @@
 /* General styles */
 html, body {
     font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
     color: #4A4A4A;
     margin: 0;
     padding: 0;
@@ -45,7 +46,7 @@ nav ul li a {
     color: #4A4A4A;
     text-decoration: none;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 /* Hover Effect */
@@ -128,7 +129,7 @@ main div {
 
 h1 {
 	font-family: 'Lexend Tera', sans-serif;
-	font-size: 30px;
+	font-size: 35px;
 	letter-spacing: 10px;
 	text-transform: uppercase;
 	color: #F5F5F5;
@@ -140,7 +141,7 @@ h1 {
 
 h2 {
 	font-family: 'Lexend Tera', sans-serif;
-	font-size: 25px;
+	font-size: 30px;
 	letter-spacing: -3px;
 	color: #FD0D71;
 	text-align: center;
@@ -150,7 +151,7 @@ h2 {
 
 h3 {
 	font-family: 'Lexend Tera', sans-serif;
-	font-size: 20px;
+	font-size: 25px;
 	letter-spacing: -3px;
 	color: #4A4A4A;
 	text-align: center;
@@ -218,6 +219,7 @@ nav a {
 	color: #4A4A4A;
     text-decoration: none;
     font-weight: bold;
+	font-size: 20px;
 }
 
 /* Pseudo-Class for Hypertext Links */
