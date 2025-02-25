@@ -91,9 +91,11 @@ main div {
 /* Image Positioned on the Right */
 .image-right {
     flex: 0 0 30%; /* Fixed width for the image container */
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
     text-align: center;
     margin-left: 30px;
-
 }
 
 /* Style for the image itself */
