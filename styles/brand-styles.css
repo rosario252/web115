@@ -7,19 +7,36 @@ html, body {
 }
 
 body {
-	background-image: url('../images/backgound.png');
+    background-image: url("../images/background.png");
 }
 
-/* Navigation Bar Layout */
+/* Header Layout */
+header {
+    display: flex;
+    align-items: center;  /* Vertically align logo and nav */
+    justify-content: space-between; /* Space between logo and nav */
+    padding: 10px 20px;  /* Add some padding */
+}
+
+/* Logo Image */
+header img {
+    width: 150px;  /* Adjust the logo size */
+    height: auto;
+    display: block;
+}
+
+/* Navigation Bar */
 nav ul {
-	display: flex;
-    justify-content: center;
-	list-style: none;
+    display: flex;
+    align-items: center;
+    list-style: none;
+	flex-wrap: wrap;
+    margin: 0;
 	flex-wrap: wrap;
 }
 
 nav ul li {
-	margin-right: 30px;
+    margin-right: 20px; /* Space between navigation items */
 }
 
 /* Navigation Links */
@@ -27,27 +44,19 @@ nav ul li a {
     color: #4A4A4A;
     text-decoration: none;
     font-weight: bold;
+    font-size: 16px;
 }
 
-/* Pseudo-Class for Hypertext Links */
+/* Hover Effect */
 nav ul li a:hover {
-    text-decoration: underline; /* Underline on hover */
-	color: #FD0D71;
-}
-
-/* Responsive Logo Image */
-header img {
-    max-width: 100%;
-    height: auto; 
-    display: block; 
-    margin: 0 auto;
+    text-decoration: underline;
+    color: #FD0D71;
 }
 
 main {
 	display: block;
 	line-height: 1.5;
-	margin: 25px 25px;
-	background-color: #F5F5F5;
+	background-color: #FFB347;
 	font-size: 100%;
 	padding: 1px;
 }
@@ -111,6 +120,15 @@ main {
     color: #555; 
 }
 
+div {
+	display: block;
+	line-height: 1.5;
+	margin: 25px;
+	background-color: #F5F5F5;
+	font-size: 100%;
+	padding: 1px;
+}
+
 h1 {
 	font-family: 'Lexend Tera', sans-serif;
 	font-size: 30px;
@@ -119,7 +137,7 @@ h1 {
 	color: #F5F5F5;
 	background-color: #6A0572;
 	text-align: center;
-	margin: 20px;
+	margin: 0;
 	padding: 10px;
 }
 
@@ -146,15 +164,6 @@ h3 {
 
 p {
 	margin: 20px;
-}
-
-blockquote {
-	font-size: 1.5rem;
-	font-style: italic;
-	border-left: 5px solid #FD0D71;
-	margin: 20px;
-	box-shadow: 4px 4px 15px #FD0D71;
-	
 }
 
 /* Form Container */
@@ -200,10 +209,16 @@ blockquote {
     text-align: center;
 }
 
+blockquote {
+	font-size: 1.5rem;
+	font-style: italic;
+	margin: 20px;	
+}
+
 /* Footer Navigation Bar Layout */
 nav a {
 	padding: 25px;
-	color: #F5F5F5;
+	color: #4A4A4A;
     text-decoration: none;
     font-weight: bold;
 }
@@ -211,14 +226,13 @@ nav a {
 /* Pseudo-Class for Hypertext Links */
 nav a:hover {
     text-decoration: underline; /* Underline on hover */
-    color: #6A0572; 
+    color: #FD0D71; 
 }
 
 /* Footer Layout */
 footer {
     text-align: center; 
     padding: 5px; 
-	color: #F5F5F5;
+	color: #4A4A4A;
     text-align: center; 
-    background-color: #FD0D71
 }
