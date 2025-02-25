@@ -217,12 +217,11 @@ p {
     justify-content: center; 
     align-items: center;     
     box-sizing: border-box; 
-	
     text-align: center; 
 }
 
 .image-container img {
-    max-width: 100%; 
+    max-width: 680px; 
     height: auto; 
     display: block; 
     margin: 0 auto; 
