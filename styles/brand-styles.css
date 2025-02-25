@@ -150,6 +150,7 @@ h2 {
 	text-align: center;
 	margin: 20px;
 	padding: 10px;
+	border-radius: 8px;
 }
 
 h3 {
@@ -164,6 +165,7 @@ h3 {
 
 p {
 	margin: 20px;
+	font-weight: bold;
 }
 
 /* Form Container */
