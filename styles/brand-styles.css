@@ -195,8 +195,32 @@ p {
     background-color: #6A0572;
 }
 
+/* Results Container (Left-aligned) */
 #results-container {
-    text-align: center;
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* Unique Style (Multiples of 3) */
+.unique {
+    color: #6A0572;
+}
+
+/* Voice Style (Multiples of 5) */
+.voice {
+    color: #FFB347;
+}
+
+/* Unique Voice Style (Multiples of Both 3 & 5) */
+.unique-voice {
+    color: #FD0D71;
+}
+
+/* Default "HI!" Style */
+.hi {
+    color: #4A4A4A;
 }
 
 /* Center the image and caption */
