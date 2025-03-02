@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 output += "Voice"; // Multiples of 5
 				cssClass = "voice";
             } else {
-                output += "hi!"; // Default text
+                output += " "; // Default text
             }
 
             // Create a paragraph element
