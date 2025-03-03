@@ -55,6 +55,12 @@ nav ul li a:hover {
     color: #FD0D71;
 }
 
+/* Dropdown Menu for Navigation Bar */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
 main {
 	display: block;
 	line-height: 1.5;
