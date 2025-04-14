@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (words.length === 0) {
                 words.push(" "); // Default if no match
             } else if (words.length > 1) {
-                cssClass = words.map(w => w.toLowerCase().replace("!", "")).join("-"); // e.g., unique-voice-bang
+                cssClass = words.map(w => w.toLowerCase().replace("!", "")).join(","); // e.g., unique-voice-bang
             }
 
             // Create a paragraph element
