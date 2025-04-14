@@ -42,28 +42,31 @@ document.addEventListener("DOMContentLoaded", function () {
         // Loop from 1 to 140 and create paragraph elements
         for (let i = 1; i <= 140; i++) {
             let output = `${i}. `;
+            let words = [];
             let cssClass = "hi"; // Default class
 
-            // Check divisibility conditions using the new function
-            if (checkDivision(i, firstDivisor) && checkDivision(i, secondDivisor)) {
-                output += "Unique Voice"; // Both 3 & 5
-                cssClass = "unique-voice";
-            } else if (checkDivision(i, firstDivisor)) {
-                output += "Unique"; // Multiples of 3
+            if (checkDivision(i, firstDivisor)) {
+                words.push("Unique");
                 cssClass = "unique";
-            } else if (checkDivision(i, secondDivisor)) {
-                output += "Voice"; // Multiples of 5
+            }
+            if (checkDivision(i, secondDivisor)) {
+                words.push("Voice");
                 cssClass = "voice";
-            } else if (checkDivision(i, thirdDivisor)) {
-				output += "BANG!"; // Multiples of 7
-				cssClass = "bang";
-			} else {
-                output += " "; // Default text
+            }
+            if (checkDivision(i, thirdDivisor)) {
+                words.push("BANG!");
+                cssClass = "bang";
+            }
+
+            if (words.length === 0) {
+                words.push(" "); // Default if no match
+            } else if (words.length > 1) {
+                cssClass = words.map(w => w.toLowerCase().replace("!", "")).join("-"); // e.g., unique-voice-bang
             }
 
             // Create a paragraph element
             const paragraph = document.createElement("p");
-            paragraph.textContent = output;
+            paragraph.textContent = output + words.join(", ");
             paragraph.classList.add(cssClass);
             resultsContainer.appendChild(paragraph);
         }
