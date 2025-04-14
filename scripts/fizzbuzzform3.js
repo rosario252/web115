@@ -27,34 +27,45 @@ document.addEventListener("DOMContentLoaded", function () {
             resultsContainer.innerHTML = ""; // Clear old results before adding new ones
         }
 
-        // Dynamic divisibility rules
-        const rules = [
-            { divisor: 3, word: "Unique", className: "unique" },
-            { divisor: 5, word: "Voice", className: "voice" },
-            { divisor: 7, word: "BANG!", className: "bang" }
-            // Add more here if needed, e.g. { divisor: 11, word: "POW!" }
-        ];
+        // Function to check divisibility
+        function checkDivision(num, divisor) {
+            return num % divisor === 0;
+        }
 
+        // Define divisors
+        const firstDivisor = 3;
+        const secondDivisor = 5;
+		const thirdDivisor = 7;
+
+        // Loop from 1 to 140 and create paragraph elements
         for (let i = 1; i <= 140; i++) {
             let output = `${i}. `;
-            let textParts = [];
-            let classList = [];
+            let words = [];
+            let cssClass = "hi"; // Default class
 
-            for (let rule of rules) {
-                if (i % rule.divisor === 0) {
-                    textParts.push(rule.word);
-                    classList.push(rule.className);
-                }
+            if (checkDivision(i, firstDivisor)) {
+                words.push("Unique");
+                cssClass = "unique";
+            }
+            if (checkDivision(i, secondDivisor)) {
+                words.push("Voice");
+                cssClass = "voice";
+            }
+            if (checkDivision(i, thirdDivisor)) {
+                words.push("BANG!");
+                cssClass = "bang";
             }
 
-            if (textParts.length === 0) {
-                textParts.push(" ");
-                classList.push("hi");
-            }
+            if (words.length === 0) {
+                words.push(" "); // Default if no match
+            }/*  else if (words.length > 1) {
+                cssClass = words.map((w) => w.toLowerCase().replace("!", "")).join("-"); // e.g., unique-voice-bang
+            } */
 
+            // Create a paragraph element
             const paragraph = document.createElement("p");
-            paragraph.textContent = output + textParts.join(" ");
-            classList.forEach(cls => paragraph.classList.add(cls));
+            paragraph.textContent = output + words.join(", ");
+            paragraph.classList.add(cssClass);
             resultsContainer.appendChild(paragraph);
         }
     });
