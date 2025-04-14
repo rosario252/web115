@@ -253,6 +253,11 @@ p {
     color: #FD0D71;
 }
 
+/* BANG Style (Multiples of 7) */
+.bang {
+	color: green;
+}
+
 /* Default "HI!" Style */
 .hi {
     color: #4A4A4A;
