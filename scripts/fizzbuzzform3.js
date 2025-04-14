@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 			let cleanedWords = [];
 			for (let i = 0; i < words.length; i++) {
-				cleanedWords.push(words[i].toLowerCase().replace("!", ""));
+				cleanedWords.push(words[i]);
 			}
 			cssClass = cleanedWords.join(",");
 
