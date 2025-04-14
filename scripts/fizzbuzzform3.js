@@ -58,11 +58,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 cssClass = "bang";
             }
 
-            if (words.length === 0) {
-                words.push(" "); // Default if no match
-            } else if (words.length > 1) {
-                cssClass = words.map(w => w.toLowerCase().replace("!", "")).join(","); // e.g., unique-voice-bang
-            }
+			let cleanedWords = [];
+			for (let i = 0; i < words.length; i++) {
+				cleanedWords.push(words[i].toLowerCase().replace("!", ""));
+			}
+			cssClass = cleanedWords.join(",");
 
             // Create a paragraph element
             const paragraph = document.createElement("p");
