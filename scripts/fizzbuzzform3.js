@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Define divisors
         const firstDivisor = 3;
         const secondDivisor = 5;
+		const thirdDivisor = 7;
 
         // Loop from 1 to 140 and create paragraph elements
         for (let i = 1; i <= 140; i++) {
@@ -53,7 +54,10 @@ document.addEventListener("DOMContentLoaded", function () {
             } else if (checkDivision(i, secondDivisor)) {
                 output += "Voice"; // Multiples of 5
                 cssClass = "voice";
-            } else {
+            } else if (checkDivision(i, thirdDivisor)) {
+				output += "BANG!"; // Multiples of 7
+				cssClass = "bang";
+			} else {
                 output += " "; // Default text
             }
 
