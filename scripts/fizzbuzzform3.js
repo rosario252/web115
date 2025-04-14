@@ -29,33 +29,42 @@ document.addEventListener("DOMContentLoaded", function () {
             resultsContainer.innerHTML = ""; // Clear old results before adding new ones
         }
 
-        const rules = [
-            { divisor: 3, word: "Unique", className: "unique" },
-            { divisor: 5, word: "Voice", className: "voice" },
-            { divisor: 7, word: "BANG!", className: "bang" }
-            // Add more here if needed, e.g. { divisor: 11, word: "POW!" }
-        ];
+        // Function to check divisibility
+        function checkDivision(num, divisor) {
+            return num % divisor === 0;
+        }
 
+        // Define divisors
+        const firstDivisor = 3;
+        const secondDivisor = 5;
+		const thirdDivisor = 7;
+
+        // Loop from 1 to 140 and create paragraph elements
         for (let i = 1; i <= 140; i++) {
             let output = `${i}. `;
-            let textParts = [];
-            let classList = [];
+            let cssClass = "hi"; // Default class
 
-            for (let rule of rules) {
-                if (i % rule.divisor === 0) {
-                    textParts.push(rule.word);
-                    classList.push(rule.className);
-                }
+            // Check divisibility conditions using the new function
+            if (checkDivision(i, firstDivisor) && checkDivision(i, secondDivisor)) {
+                output += "Unique Voice"; // Both 3 & 5
+                cssClass = "unique-voice";
+            } else if (checkDivision(i, firstDivisor)) {
+                output += "Unique"; // Multiples of 3
+                cssClass = "unique";
+            } else if (checkDivision(i, secondDivisor)) {
+                output += "Voice"; // Multiples of 5
+                cssClass = "voice";
+            } else if (checkDivision(i, thirdDivisor)) {
+				output += "BANG!"; // Multiples of 7
+				cssClass = "bang";
+			} else {
+                output += " "; // Default text
             }
 
-            if (textParts.length === 0) {
-                textParts.push(" ");
-                classList.push("hi");
-            }
-
+            // Create a paragraph element
             const paragraph = document.createElement("p");
-            paragraph.textContent = output + textParts.join(" ");
-            classList.forEach(cls => paragraph.classList.add(cls));
+            paragraph.textContent = output;
+            paragraph.classList.add(cssClass);
             resultsContainer.appendChild(paragraph);
         }
     });
