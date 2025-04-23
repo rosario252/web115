@@ -16,7 +16,6 @@ header {
     display: relative;
     align-items: center;  /* Vertically align logo and nav */
     justify-content: space-between; /* Space between logo and nav */
-    padding: 10px 20px;  /* Add some padding */
 }
 
 /* Logo Image */
