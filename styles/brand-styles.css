@@ -13,14 +13,14 @@ body {
 
 /* Header Layout */
 header div {
-    display: relative;
+    display: flex;
     align-items: center;  /* Vertically align logo and nav */
     justify-content: space-between; /* Space between logo and nav */
 }
 
 /* Logo Image */
 header img {
-    width: auto;  /* Adjust the logo size */
+    width: 250px;  /* Adjust the logo size */
     height: auto;
     display: block;
 }
@@ -32,7 +32,7 @@ nav ul {
     align-items: center;
     list-style: none;
 	flex-wrap: wrap;
-    margin: 0;
+    margin: 10px;
 	flex-wrap: wrap;
 }
 
