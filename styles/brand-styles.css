@@ -20,7 +20,7 @@ header div {
 
 /* Logo Image */
 header img {
-    width: 250px;  /* Adjust the logo size */
+    width: auto;  /* Adjust the logo size */
     height: auto;
     display: block;
 }
