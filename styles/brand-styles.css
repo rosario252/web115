@@ -22,7 +22,6 @@ header div {
 header img {
     width: 250px;  /* Adjust the logo size */
     height: auto;
-    display: block;
 }
 
 /* Navigation Bar */
@@ -32,7 +31,7 @@ nav ul {
     align-items: center;
     list-style: none;
 	flex-wrap: wrap;
-    margin: 10px;
+    margin: 0 0 0 150px;
 	flex-wrap: wrap;
 }
 
