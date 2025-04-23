@@ -12,7 +12,7 @@ body {
 }
 
 /* Header Layout */
-header {
+header div {
     display: relative;
     align-items: center;  /* Vertically align logo and nav */
     justify-content: space-between; /* Space between logo and nav */
