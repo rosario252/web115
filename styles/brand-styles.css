@@ -25,6 +25,10 @@ header img {
     display: block;
 }
 
+nav {
+	display: block;
+}
+
 /* Navigation Bar */
 nav ul {
     display: flex;
