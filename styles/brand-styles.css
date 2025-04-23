@@ -287,6 +287,13 @@ p {
     color: #555; 
 }
 
+.logo-container img {
+    width: 250px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
 blockquote {
 	font-size: 1.5rem;
 	margin: 20px;	
