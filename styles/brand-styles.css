@@ -27,7 +27,7 @@ header img {
 /* Navigation Bar */
 nav ul {
     display: flex;
-	justify-content: flex-end;
+	justify-content: center;
     align-items: center;
     list-style: none;
 	flex-wrap: wrap;
@@ -35,7 +35,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 15px; /* Space between navigation items */
+    margin-right: 10px; /* Space between navigation items */
 }
 
 /* Navigation Links */
