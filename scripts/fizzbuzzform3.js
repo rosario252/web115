@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault();
 
         // Get user input values
-        const firstName = document.getElementById("first-name").value;
-        const middleInitial = document.getElementById("middle-initial").value;
-        const lastName = document.getElementById("last-name").value;
+        const firstName = document.getElementById("first-name").value.trim();
+        const middleInitial = document.getElementById("middle-initial").value.trim();
+        const lastName = document.getElementById("last-name").value.trim();
 
         // Create the full name string
         let fullName = firstName;
