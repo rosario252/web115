@@ -3,7 +3,7 @@ html, body {
     font-family: 'Quicksand', sans-serif;
 	font-size: 16px;
     color: #4A4A4A;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -27,7 +27,7 @@ header img {
 /* Navigation Bar */
 nav ul {
     display: flex;
-	justify-content: flex-end;
+	justify-content: center;
     align-items: center;
     list-style: none;
 	flex-wrap: wrap;
@@ -35,21 +35,42 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 15px; /* Space between navigation items */
+    margin-right: 10px; /* Space between navigation items */
 }
 
 /* Navigation Links */
-nav ul li a {
-    color: #4A4A4A;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
+.dropdown {
+	position: relative;
+	display: inline-block;
 }
 
-/* Hover Effect */
-nav ul li a:hover {
-    text-decoration: underline;
-    color: #FD0D71;
+.submenu {
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	min-width: 150px;
+}
+
+.submenu li {
+	padding: 8px 12px;
+}
+
+.submenu li a {
+	text-decoration: none;
+	color: #333;
+	display: block;
+}
+
+.submenu li a:hover {
+	background-color: #f2f2f2;
+}
+
+.dropdown:hover .submenu {
+	display: block;
 }
 
 main {
