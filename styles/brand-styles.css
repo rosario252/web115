@@ -337,6 +337,15 @@ footer {
     text-align: center; 
 }
 
+footer p a {
+	color: #4A4A4A
+}
+
+footer p a:hover {
+	text-decoration: underline;
+	color: #FD0D71;
+}
+
 /* Responsive Behavior - Smaller Screens */
 /* @media (max-width: 1024px) { */
     /* .image-container img { */
